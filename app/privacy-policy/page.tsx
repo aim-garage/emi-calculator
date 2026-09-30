@@ -1,6 +1,14 @@
+import type { Metadata } from "next";
 import { InfoPage } from "@/components/InfoPage";
 
-export const metadata = { title: "Privacy Policy | ClearEMI" };
+export const metadata: Metadata = {
+  title: "Privacy Policy",
+  description:
+    "Read the ClearEMI privacy policy to understand how we handle calculator inputs and keep your browsing information private.",
+  alternates: {
+    canonical: "/privacy-policy",
+  },
+};
 
 export default function PrivacyPolicyPage() {
   return (

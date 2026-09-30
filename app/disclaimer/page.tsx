@@ -1,6 +1,14 @@
+import type { Metadata } from "next";
 import { InfoPage } from "@/components/InfoPage";
 
-export const metadata = { title: "Financial Disclaimer | ClearEMI" };
+export const metadata: Metadata = {
+  title: "Financial Disclaimer",
+  description:
+    "Understand the limits of the ClearEMI loan estimator and why lender-specific fees, rates, and terms may differ from the estimate.",
+  alternates: {
+    canonical: "/disclaimer",
+  },
+};
 
 export default function DisclaimerPage() {
   return (

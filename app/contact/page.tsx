@@ -1,6 +1,14 @@
+import type { Metadata } from "next";
 import { InfoPage } from "@/components/InfoPage";
 
-export const metadata = { title: "Contact | ClearEMI" };
+export const metadata: Metadata = {
+  title: "Contact",
+  description:
+    "Contact ClearEMI for questions, feedback, or loan calculator support. We help users compare EMI estimates before borrowing.",
+  alternates: {
+    canonical: "/contact",
+  },
+};
 
 export default function ContactPage() {
   return (
