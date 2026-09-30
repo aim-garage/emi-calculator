@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     title: "Loan EMI Calculator | ClearEMI",
     description:
       "Estimate monthly instalments, total interest, and the full repayment timeline for your next loan with ClearEMI.",
-    url: "https://www.clearemi.com/emi-calculator",
+    url: "https://aim-garage.github.io/emi-calculator/emi-calculator",
   },
 };
 

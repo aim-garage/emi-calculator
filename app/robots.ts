@@ -8,7 +8,7 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://www.clearemi.com/sitemap.xml",
-    host: "https://www.clearemi.com",
+    sitemap: "https://aim-garage.github.io/emi-calculator/sitemap.xml",
+    host: "https://aim-garage.github.io/emi-calculator",
   };
 }
