@@ -2,9 +2,35 @@ import Link from "next/link";
 import { EmiCalculator } from "@/components/EmiCalculator";
 
 export function CalculatorPage() {
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    name: "ClearEMI",
+    applicationCategory: "FinanceApplication",
+    operatingSystem: "Web",
+    description:
+      "Free EMI calculator to estimate monthly repayments, total interest, and loan repayment schedules for home, personal, and vehicle loans.",
+    offers: {
+      "@type": "Offer",
+      price: "0",
+      priceCurrency: "INR",
+    },
+    featureList: [
+      "Loan EMI calculation",
+      "Interest estimate",
+      "Repayment schedule",
+      "Principal versus tenure comparison",
+    ],
+  };
+
   return (
-    <div className="page-container">
-      <section className="page-intro">
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+      />
+      <div className="page-container">
+        <section className="page-intro">
         <div className="intro-copy">
           <span className="eyebrow">BORROW WITH CLARITY</span>
           <h1>EMI calculator</h1>
@@ -34,6 +60,7 @@ export function CalculatorPage() {
         <p>ClearEMI is a simple starting point for understanding loan repayments. The calculation runs in your browser and is intended for estimates, not as a loan offer.</p>
         <Link href="/disclaimer" className="text-link">Read the financial disclaimer <span aria-hidden="true">↗</span></Link>
       </section>
-    </div>
+      </div>
+    </>
   );
 }

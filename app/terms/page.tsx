@@ -1,6 +1,14 @@
+import type { Metadata } from "next";
 import { InfoPage } from "@/components/InfoPage";
 
-export const metadata = { title: "Terms of Use | ClearEMI" };
+export const metadata: Metadata = {
+  title: "Terms of Use",
+  description:
+    "Review the ClearEMI terms of use for using the EMI calculator and understanding the limits of this financial estimate tool.",
+  alternates: {
+    canonical: "/terms",
+  },
+};
 
 export default function TermsPage() {
   return (

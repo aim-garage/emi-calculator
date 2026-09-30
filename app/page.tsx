@@ -2,8 +2,18 @@ import type { Metadata } from "next";
 import { CalculatorPage } from "@/components/CalculatorPage";
 
 export const metadata: Metadata = {
-  title: "EMI Calculator – Calculate Loan EMI & Interest | ClearEMI",
-  description: "Calculate your monthly loan EMI, total interest, and repayment schedule with this free EMI calculator.",
+  title: "EMI Calculator",
+  description:
+    "Calculate monthly EMI, total interest, and repayment schedule for loans with this free EMI calculator. Compare principal, rate, and tenure in seconds.",
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    title: "EMI Calculator | ClearEMI",
+    description:
+      "Calculate monthly EMI, total interest, and repayment schedules for home, personal, and vehicle loans with ClearEMI.",
+    url: "https://www.clearemi.com/",
+  },
 };
 
 export default function Home() {

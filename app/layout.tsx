@@ -14,8 +14,42 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "ClearEMI | Loan repayment calculator",
-  description: "Understand your monthly loan payment and total interest with a clear, free EMI calculator.",
+  metadataBase: new URL("https://www.clearemi.com"),
+  applicationName: "ClearEMI",
+  title: {
+    default: "ClearEMI | Free Loan EMI Calculator",
+    template: "%s | ClearEMI",
+  },
+  description:
+    "Calculate monthly EMI, total interest, and repayment schedules with ClearEMI. A fast, free loan EMI calculator for loans and mortgages.",
+  keywords: [
+    "EMI calculator",
+    "loan EMI calculator",
+    "monthly EMI calculator",
+    "home loan EMI calculator",
+    "personal loan calculator",
+    "car loan calculator",
+    "loan repayment calculator",
+    "interest calculator",
+  ],
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    title: "ClearEMI | Free Loan EMI Calculator",
+    description:
+      "Estimate your monthly EMI, total interest, and repayment schedule with a clear, free calculator built for fast loan planning.",
+    url: "https://www.clearemi.com/",
+    siteName: "ClearEMI",
+    locale: "en_IN",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "ClearEMI | Free Loan EMI Calculator",
+    description:
+      "Estimate your monthly EMI, total interest, and repayment schedule with a clear, free calculator built for fast loan planning.",
+  },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
