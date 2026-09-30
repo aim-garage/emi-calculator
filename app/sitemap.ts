@@ -3,7 +3,7 @@ import type { MetadataRoute } from "next";
 export const dynamic = "force-static";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://www.clearemi.com";
+  const baseUrl = "https://aim-garage.github.io/emi-calculator";
 
   return [
     {

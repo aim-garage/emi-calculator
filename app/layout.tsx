@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://www.clearemi.com"),
+  metadataBase: new URL("https://aim-garage.github.io/emi-calculator"),
   applicationName: "ClearEMI",
   title: {
     default: "ClearEMI | Free Loan EMI Calculator",
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     title: "ClearEMI | Free Loan EMI Calculator",
     description:
       "Estimate your monthly EMI, total interest, and repayment schedule with a clear, free calculator built for fast loan planning.",
-    url: "https://www.clearemi.com/",
+    url: "https://aim-garage.github.io/emi-calculator/",
     siteName: "ClearEMI",
     locale: "en_IN",
     type: "website",
