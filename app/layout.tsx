@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import { PwaRegister } from "@/components/PwaRegister";
 import { SiteShell } from "@/components/SiteShell";
 import "./globals.css";
 
@@ -32,6 +33,7 @@ export const metadata: Metadata = {
     "loan repayment calculator",
     "interest calculator",
   ],
+  manifest: "/manifest.webmanifest",
   alternates: {
     canonical: "/",
   },
@@ -59,6 +61,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
+        <PwaRegister />
         <SiteShell>{children}</SiteShell>
       </body>
     </html>
