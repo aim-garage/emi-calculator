@@ -20,13 +20,36 @@ export default function manifest(): MetadataRoute.Manifest {
         src: "/emi-calculator/icon-192.png",
         sizes: "192x192",
         type: "image/png",
-        purpose: "maskable",
+        purpose: "any",
       },
       {
         src: "/emi-calculator/icon-512.png",
         sizes: "512x512",
         type: "image/png",
-        purpose: "maskable",
+        purpose: "any",
+      },
+    ],
+    screenshots: [
+      {
+        src: "/emi-calculator/screenshot-1.png",
+        sizes: "1280x720",
+        type: "image/png",
+        form_factor: "wide",
+        label: "ClearEMI home screen",
+      },
+      {
+        src: "/emi-calculator/screenshot-2.png",
+        sizes: "1280x720",
+        type: "image/png",
+        form_factor: "wide",
+        label: "ClearEMI calculator results",
+      },
+      {
+        src: "/emi-calculator/screenshot-mobile.png",
+        sizes: "390x844",
+        type: "image/png",
+        form_factor: "narrow",
+        label: "ClearEMI mobile screen",
       },
     ],
   };
